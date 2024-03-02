@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+.parkingContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+}
+
+.parkingImageContainer {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.parkingLogoContainer {
+  width: 100%;
+  display:flex;
+
+}
+
+
+.parkingLogoImage {
+  width: 150px;
+}
+
+.parkingImageGradient1 {
+  position: absolute;
+  z-index: 0;
+  width: 40%;
+  height: 35%;
+  top: 0;
+}
+
+.parkingImageGradient2 {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  height: 80%;
+  bottom: 40;
+  
+}
+
+.parkingImageGradient3 {
+  position: absolute;
+  z-index: 0;
+  width: 50%;
+  height: 50%;
+  right: 20;
+  bottom:20;
+}
+
+.my_blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, .20) 0%, #0cc3e8 100%);
+  filter: blur(123px);
+}
+
+.my_orange__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, .20) 0%, #e8810c 100%);
+  filter: blur(123px);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.underTextH1 {
+  color: rgb(244, 243, 243);
+  font-size: 72px;
+  font-weight: bold;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 350px;
+  z-index: 3;
+}
+
+.underTextP {
+  color: rgb(244, 243, 243);
+  font-size: 18px;
+  font-weight: bold;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 450px;
+  z-index: 3;
+}
+
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #fbf3ee 0.89%,
+    #f4eddb 17.23%,
+    #f0e49d 42.04%,
+    #f6e087 55.12%,
+    #e7a63e 71.54%,
+    #f18203 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.rockImage {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.parkingBlurbContainer {
+  color: white;
+}
+
+@media screen and (max-width:920px){
+  .rockImage {
+    width: 300px;
+  }
+
+  .underTextH1 {
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 250px;
+  }
+
+  .underTextP {
+    font-size: 11px;
+    top: 335px;
+  }
+
+  
+}
+
+@media screen and (max-width:600px){
+  .parkingContainer{
+    padding: 0;
+  }
+
+  .parkingLogoContainer {
+    justify-content: center;
+    margin-top:50px;
+  }
+  
+}
+
+
+
+
+
